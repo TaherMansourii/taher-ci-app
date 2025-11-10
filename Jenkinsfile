@@ -9,7 +9,8 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/TaherMansourii/taher-ci-app.git'
+                git branch: 'main', url: 'https://github.com/TaherMansourii/taher-ci-app.git'
+
             }
         }
 
