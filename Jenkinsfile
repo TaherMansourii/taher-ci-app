@@ -4,6 +4,7 @@ pipeline {
     environment {
         DOCKERHUB = credentials('dockerhub')       // DockerHub credentials ID in Jenkins
         IMAGE = "tahermansourii/taher-ci-app"
+        KUBECONFIG = '/var/lib/jenkins/.kube/config'
     }
 
     stages {
